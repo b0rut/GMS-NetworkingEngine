@@ -9,23 +9,31 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\broadcast_message.gml</script>
     <script>scripts\server_init.gml</script>
+    <script>scripts\send_to_socket.gml</script>
     <scripts name="Session Scripts">
       <script>scripts\session_create.gml</script>
       <script>scripts\session_exists.gml</script>
       <script>scripts\session_join.gml</script>
       <script>scripts\session_broadcast_message.gml</script>
+      <script>scripts\session_find.gml</script>
+      <script>scripts\session_disconnect.gml</script>
     </scripts>
     <scripts name="Client Scripts">
       <script>scripts\client_update_info.gml</script>
       <script>scripts\client_find_info.gml</script>
       <script>scripts\client_in_session.gml</script>
       <script>scripts\client_create.gml</script>
+      <script>scripts\client_destroy.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\objServer</object>
   </objects>
+  <constants number="1">
+    <constant name="session_disconnected">0</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
